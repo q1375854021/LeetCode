@@ -1,3 +1,0 @@
-D:/study/CPP/Leecode/hot100/P51_Nqueens/Vscode_CPP/build/CMakeFiles/main.dir
-D:/study/CPP/Leecode/hot100/P51_Nqueens/Vscode_CPP/build/CMakeFiles/edit_cache.dir
-D:/study/CPP/Leecode/hot100/P51_Nqueens/Vscode_CPP/build/CMakeFiles/rebuild_cache.dir
