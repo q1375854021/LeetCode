@@ -2,6 +2,6 @@
 
 int main(){
     Solution solution;
-    solution.removeElement_test();
+    solution.twosum_test();
     return 0;
 }
