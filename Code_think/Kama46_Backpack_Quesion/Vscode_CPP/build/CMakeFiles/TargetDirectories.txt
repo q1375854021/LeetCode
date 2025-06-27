@@ -1,0 +1,3 @@
+/home/q1375854021/home_study/cpp/leetcode/LeetCode/Code_think/Kama46_Backpack_Quesion/Vscode_CPP/build/CMakeFiles/main.dir
+/home/q1375854021/home_study/cpp/leetcode/LeetCode/Code_think/Kama46_Backpack_Quesion/Vscode_CPP/build/CMakeFiles/edit_cache.dir
+/home/q1375854021/home_study/cpp/leetcode/LeetCode/Code_think/Kama46_Backpack_Quesion/Vscode_CPP/build/CMakeFiles/rebuild_cache.dir

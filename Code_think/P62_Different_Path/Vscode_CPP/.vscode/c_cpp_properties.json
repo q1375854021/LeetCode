@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Mingw",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include"                           
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "compilerPath": "/usr/bin/g++",
+            "cppStandard": "gnu++17",                                                
+            "cStandard": "c11",
+            "intelliSenseMode": "linux-gcc-x64",
+            "defines": [
+                "MY_PROJECT_DEBUG_MODE=1"                                               
+            ]
+        }
+    ],
+    "version": 4
+}
