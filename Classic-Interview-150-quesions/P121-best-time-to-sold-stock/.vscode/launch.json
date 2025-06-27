@@ -1,0 +1,28 @@
+//只是用来配置调试器的，真正启动的话需要在task.json中启动
+{  //launch.json是用于配置调试器的启动配置的
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",                //调试器的名称。将显示在调试试图的调试配置下拉菜单中
+            "type": "cppdbg",                         //cppdbg:c++调试器    python:Python调试器    node:node.js调试器   corclr:Net Core调试器   gdb:GDB调试器(通用)  lldb:LLDB调试器(适用于多种语言，常用与macOS)   rust  go  dart  hdb啥的
+            "request": "launch",                        // 指定调试器的启动类型   lauch(启动)  attach(附加)  attachprocess(附加到进程)
+            "targetArchitecture": "x64",                //架构类型  x86:32位   x64:64位  arm:arm架构   arm64:64位arm
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",                 //指定要调试的程序路径  workspace指代当前工作路径  fileBasenameNoExtension表示当前打开文件的基本名称，不包含后缀
+            "miDebuggerPath":"D:/Software/Extensions/Mingw/mingw64/bin/gdb.exe",      //用于制定调试器的路径  
+            "args": [""],                               //args 用于制定传递给被调试程序的命令函参数  传给main函数
+            "stopAtEntry": true,                        //stopAtEntry    用于控制调试程序是否停止在程序的入口点     
+            "cwd": "${workspaceFolder}",                  //指定调试器的工作目录  一般默认值指定在当前目录
+            "externalConsole": false,                 //用于控制是否使用外部的终端  设置为false则使用vscode的内置终端 
+            "setupCommands": [   //在调试之前执行，向调试器发送一系列初始化命令，比如设置环境变量，设置调试器行为，执行自定义脚本
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+            //"preLaunchTask": "C/C++: gcc.exe build active file",  // 调试前的预执行任务，这里的值是tasks.json文件中对应的编译任务，也就是调试前需要先编译
+        }
+    ],
+    "currentfile": "${fileBasenameNoExtension}"     //这一行用于指定当前vscode打开的文件，然后python调用就可以获取当前的文件名，从而编译脚本会很好写。
+ }
+ 
